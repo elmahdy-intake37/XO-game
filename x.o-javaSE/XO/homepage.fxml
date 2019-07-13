@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="SimpleController">
+  <children>
+    <AnchorPane fx:id="bg" cache="false" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color:#009688;&#10;" styleClass="mainFxmlClass">
+      <children>
+        <Label layoutX="119.0" layoutY="54.0" prefHeight="128.0" prefWidth="260.0" text="Welcome" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="false" wrapText="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant />
+              </light>
+            </Lighting>
+          </effect>
+          <font>
+            <Font name="Comic Sans MS Bold" size="60.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.031" green="0.388" red="1.000" fx:id="x2" />
+          </textFill>
+        </Label>
+        <Label font="$x1" layoutX="195.0" layoutY="147.0" prefHeight="91.0" prefWidth="101.0" text="X" textAlignment="CENTER" underline="false" wrapText="false">
+          <effect>
+            <Lighting diffuseConstant="1.3015873015873016">
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant />
+              </light>
+            </Lighting>
+          </effect>
+        </Label>
+        <Label font="$x1" layoutX="269.0" layoutY="151.0" minHeight="46.0" prefHeight="81.0" prefWidth="54.0" text="O" textAlignment="CENTER" underline="false" wrapText="false">
+          <effect>
+            <Lighting diffuseConstant="1.3015873015873016">
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant />
+              </light>
+            </Lighting>
+          </effect>
+        </Label>
+        <Label font="$x1" layoutX="239.0" layoutY="152.0" minHeight="46.0" prefHeight="81.0" prefWidth="54.0" text="/" textAlignment="CENTER" textFill="#b7b7b7" underline="false" wrapText="false" />
+        <Button id="btn_start" fx:id="label" cancelButton="false" defaultButton="false" layoutX="173.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="162.0" style="-fx-background-color: #b7b7b7;" text="Start" textAlignment="CENTER" textFill="$x2" underline="false">
+          <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+          </font>
+        </Button>
+      </children>
+      <effect>
+        <InnerShadow choke="0.35714285714285715" color="#00665a" height="255.0" radius="127.0" width="255.0">
+          <input>
+            <ColorAdjust hue="0.038167938931297885" />
+          </input>
+        </InnerShadow>
+      </effect>
+      <stylesheets>
+        <URL value="@try.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@simple.css" />
+  </stylesheets>
+</AnchorPane>

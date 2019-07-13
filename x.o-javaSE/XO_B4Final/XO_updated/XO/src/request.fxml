@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #009688;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RequestController">
+   <children>
+      <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="81.0" style="-fx-background-color: #b7b7b7;" text="back" textFill="#ff6308">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="458.0" layoutY="121.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="config" textFill="#ff6308">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="376.0" layoutY="121.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="ignore" textFill="#ff6308" />
+      <TextArea layoutX="136.0" layoutY="121.0" prefHeight="54.0" prefWidth="200.0" />
+      <TextArea layoutX="136.0" layoutY="212.0" prefHeight="54.0" prefWidth="200.0" />
+      <TextArea layoutX="136.0" layoutY="302.0" prefHeight="54.0" prefWidth="200.0" />
+      <Button contentDisplay="CENTER" layoutX="376.0" layoutY="215.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="ignore" textFill="#ff6308" />
+      <Button contentDisplay="CENTER" layoutX="376.0" layoutY="305.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="ignore" textFill="#ff6308" />
+      <Button contentDisplay="CENTER" layoutX="458.0" layoutY="215.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="config" textFill="#ff6308">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="458.0" layoutY="305.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: #b7b7b7;" text="config" textFill="#ff6308">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="187.0" layoutY="9.0" text="Request" textFill="#ff6308">
+         <font>
+            <Font name="Comic Sans MS Bold" size="60.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <ColorAdjust hue="0.04">
+         <input>
+            <InnerShadow choke="0.36" color="#006658" height="255.0" radius="127.0" width="255.0" />
+         </input>
+      </ColorAdjust>
+   </effect>
+</AnchorPane>

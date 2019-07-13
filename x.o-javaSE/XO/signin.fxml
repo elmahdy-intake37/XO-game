@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #009688;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="SigninController">
+  <children>
+    <Button fx:id="reset" layoutX="290.0" layoutY="285.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="25.0" prefWidth="81.0" text="Reset">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+      <textFill>
+        <Color blue="0.031" green="0.388" red="1.000" fx:id="x1" />
+      </textFill>
+    </Button>
+    <TextArea fx:id="usrnm" layoutX="204.0" layoutY="148.0" prefHeight="41.0" prefWidth="216.0" promptText="Enter Your User_name" />
+    <Label layoutX="89.0" layoutY="148.0" text="UserName">
+      <font>
+        <Font name="Comic Sans MS" size="20.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Button fx:id="back" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#backAction" prefHeight="28.0" prefWidth="81.0" style="-fx-background-color: #b7b7b7;" text="back" textFill="$x1">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Button>
+    <Label layoutX="123.0" layoutY="49.0" prefHeight="70.0" prefWidth="271.0" text="  sign in" textFill="$x1">
+      <font>
+        <Font name="Comic Sans MS Bold" size="50.0" />
+      </font>
+    </Label>
+    <Button fx:id="submit" font="$x2" layoutX="123.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="81.0" text="Submit" textFill="$x1" />
+    <Label font="$x3" layoutX="89.0" layoutY="208.0" text="password" />
+    <TextArea fx:id="pass" layoutX="204.0" layoutY="208.0" prefHeight="41.0" prefWidth="216.0" promptText="Enter Your Password" />
+  </children>
+  <effect>
+    <ColorAdjust hue="0.04">
+      <input>
+        <InnerShadow choke="0.36" color="#00665a" height="255.0" radius="127.0" width="255.0" />
+      </input>
+    </ColorAdjust>
+  </effect>
+</AnchorPane>

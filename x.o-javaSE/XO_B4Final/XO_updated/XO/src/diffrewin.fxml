@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="xo.DiffrewinController">
+  <children>
+    <Button fx:id="exit" layoutX="212.0" layoutY="289.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="64.0" prefWidth="203.0" text="Exit" />
+    <Button fx:id="play_again" layoutX="216.0" layoutY="200.0" mnemonicParsing="false" onAction="#playagainAction" prefHeight="64.0" prefWidth="197.0" text="play Again" />
+    <TextField fx:id="my_winner" layoutX="256.0" layoutY="116.0" prefHeight="36.0" prefWidth="78.0" text="          10" />
+    <Label layoutX="256.0" layoutY="50.0" text="Score">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

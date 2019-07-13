@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #009688;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ComputerController">
+  <children>
+    <Button fx:id="back" layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="76.0" text="Back" textFill="#ff6308" />
+    <TextArea fx:id="scoreX" layoutX="384.0" layoutY="40.0" prefHeight="37.0" prefWidth="80.0" />
+    <TextArea fx:id="scoreO" layoutX="384.0" layoutY="82.0" prefHeight="37.0" prefWidth="80.0" />
+    <TextArea fx:id="winner" layoutX="193.0" layoutY="90.0" prefHeight="37.0" prefWidth="80.0" />
+    <Label layoutX="354.0" layoutY="73.0" text="o">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <GridPane layoutX="45.0" layoutY="168.0" prefHeight="168.0" prefWidth="406.0">
+      <children>
+        <Button fx:id="b1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" />
+        <Button fx:id="b2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="1" />
+        <Button fx:id="b3" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="2" />
+        <Button fx:id="b4" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.rowIndex="1" />
+        <Button fx:id="b5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="b6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button fx:id="b7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.rowIndex="2" />
+        <Button fx:id="b8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="b9" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="136.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Label fx:id="winner_label" layoutX="193.0" layoutY="42.0" text="winner">
+      <font>
+        <Font name="Comic Sans MS" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="355.0" layoutY="38.0" text="x">
+      <font>
+        <Font name="Comic Sans MS Bold" size="30.0" />
+      </font>
+    </Label>
+  </children>
+  <effect>
+    <InnerShadow choke="0.36" color="#00665a" height="255.0" radius="127.0" width="255.0">
+      <input>
+        <ColorAdjust />
+      </input>
+    </InnerShadow>
+  </effect>
+</AnchorPane>

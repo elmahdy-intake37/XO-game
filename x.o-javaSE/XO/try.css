@@ -1,0 +1,7 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass #bg {
+-fx-background:url(o.png);
+}
